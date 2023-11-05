@@ -1,0 +1,27 @@
+.video {
+  padding-bottom: clamp(50px, 12.5vw, 150px);
+  display: flex;
+}
+
+.video-title {
+  margin-bottom: 20px;
+}
+
+.video-text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.video_frame {
+  display: flex;
+  width: clamp (280px, 83.33vw, 1000px);
+}
+
+.video__content {
+  padding-bottom: 30px;
+  display: flex;
+  width: 100%;
+  height: clamp(200px, 41.66vw, 500px);
+}

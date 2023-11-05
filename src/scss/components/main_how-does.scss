@@ -1,0 +1,88 @@
+.how-does {
+  padding-bottom: 150px;
+}
+
+.how-does__iners {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.how__does-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 50px;
+}
+
+.how-does_slider {
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+
+.how-does__list {
+  padding: 50px 0 70px;
+  counter-reset: myCounter;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.how-does__item {
+  list-style-type: none;
+  width: clamp(145px, 22.5vw, 270px);
+  position: relative;
+  padding: 19px 0 19px clamp(20px, 20vw, 240px);
+  margin-left: clamp(20px, 7.5vw, 90px);
+  box-sizing: content-box;
+  display: flex;
+  align-content: center;
+  justify-content: start;
+  justify-items: center;
+  align-items: center;
+  min-height: 63px;
+}
+
+.how-does__item + .how-does__item {
+  margin-top: 40px;
+}
+
+.how-does__item::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background: #0066ff;
+  font-size: clamp(24px, 4vw, 48px);
+  font-weight: 700;
+  color: #fff;
+  height: clamp(50px, 8.33vw, 100px);
+  width: clamp(50px, 8.33vw, 100px);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  // top: 0;
+}
+
+.mySwiper_how {
+  padding: 50px 0 70px;
+  counter-reset: myCounter;
+}
+
+.swiper-slide {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  .how-does__item {
+    margin-left: 0;
+    // padding-left: 0;
+  }
+}

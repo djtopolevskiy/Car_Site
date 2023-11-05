@@ -1,0 +1,81 @@
+.why-lease {
+  padding: 150px 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.wly-lease__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.why-lease__item-img {
+  margin-bottom: 30px;
+}
+
+.why-lease__item-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.why-lease__item-text {
+  text-align: left;
+}
+
+.section_slider_why {
+  position: relative;
+  height: 400px;
+
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+
+.mySwiper_why {
+  padding: 50px 0;
+  width: 280px;
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.wrapper_why {
+  background: #000;
+  background: #fff;
+  position: absolute;
+  display: flex;
+}
+
+.sw_why {
+  display: flex;
+  width: 100%;
+  .wl_block_slider {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    // border: 1px solid rgba(67, 142, 255, 0.63);
+
+    img {
+      display: block;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
